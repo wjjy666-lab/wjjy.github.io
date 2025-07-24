@@ -10,6 +10,7 @@ const enNavbarData = {
 // ---------- Home page data
 const enHomePageData = {
   name: "Jiangjiyuan Wang",
+  home_title: "Short Bio"
   home_content: `
     <div>
       <p>Hi! I am an undergraduate student at Shanghai Jiao Tong University.</p>

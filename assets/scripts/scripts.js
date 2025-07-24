@@ -1,20 +1,18 @@
-var lang = "en"; // Force English only
 var pathname = window.location.pathname.replace(".html", "");
 
 $(document).ready(function () {
-  // ---------- Language Handler (simplified)
+  // ---------- Layout direction
   document.getElementById("content_wrapper").classList.add("ltr_wrapper");
 
-  if (
-    document.getElementById("languageIcon") &&
-    document.getElementById("languageText")
-  ) {
-    document.getElementById("languageIcon").src =
-      "../assets/images/icons/ir.png";
-    document.getElementById("languageText").innerText = "FA"; // Optional: change to "EN" or remove this toggle completely
-  }
+  // ---------- Remove language toggle completely (optional cleanup)
+  // If your HTML still has elements with IDs "languageIcon" and "languageText",
+  // you can hide them like this:
+  const langIcon = document.getElementById("languageIcon");
+  const langText = document.getElementById("languageText");
+  if (langIcon) langIcon.style.display = "none";
+  if (langText) langText.style.display = "none";
 
-  // Home page data
+  // ---------- Home page data
   const home_data = {
     image: globalData.image,
     links: [
@@ -77,5 +75,5 @@ $(document).ready(function () {
     homeData();
   }
 
-  // You can continue updating other page loaders similarly...
+  // TODO: Apply same logic to other pages (e.g. publicationsData, researchData, etc.) if needed.
 });
