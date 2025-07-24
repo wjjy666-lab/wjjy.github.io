@@ -11,23 +11,19 @@ const enNavbarData = {
 const enHomePageData = {
   name: " Jiangjiyuan Wang ",
   //home_title: "About me",
-  home_content: `
+  home_content:
   <div>
     <p> Hi!I am an undergraduate student at Shanghai Jiao Tong University.
     </p>I am interested in computer vision.
     <h2 class='title'> News </h2>
-//    <ul>
-//      <li> Heuristics</li>
-//      <li> Policy planning </li>
-//      <li> Flexiblity to details </li>
-//    </ul>
+
   </div>
-  `,
+  ,
 };
 
 // ---------- Publications page data
 const enPublicationsPageData = {
-//  type_one_title: "Papers",
+  type_one_title: "Papers",
 //
 //  type_one_items: [
 //    {
