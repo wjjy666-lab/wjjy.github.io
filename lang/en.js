@@ -2,14 +2,13 @@
 const enNavbarData = {
   title: "Jiangjiyuan Wang",
   Home: "Home",
-  publications: "Publications",
-  Research: "Research",
-  Contact: "Contact",
+  publications: "Publications"
 };
 
 // ---------- Home page data
 const enHomePageData = {
   name: "Jiangjiyuan Wang",
+  jobTitle: " Undergraduate Student ",
   home_title: "Short Bio",
   home_content: `
     <div>
