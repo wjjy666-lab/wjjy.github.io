@@ -1,37 +1,34 @@
 $(document).ready(function () {
-  let lang = localStorage.getItem("lang");
+  // 强制设置语言为英语
+  localStorage.setItem("lang", "en");
 
-  if (!lang) {
-    localStorage.setItem("lang", "en");
-  }
-
+  // 只使用英语导航数据
   const navbar_data = {
-    title: lang === "fa" ? faNavbarData.title : enNavbarData.title,
+    title: enNavbarData.title, // 直接使用英语标题
     navbar_links: [
       {
         active: navbarLinks.home ? true : false,
-        title: lang === "fa" ? faNavbarData.Home : enNavbarData.Home,
+        title: enNavbarData.Home, // 直接使用英语文本
         url: "/",
       },
       {
         active: navbarLinks.publications ? true : false,
-        title:
-          lang === "fa" ? faNavbarData.publications : enNavbarData.publications,
+        title: enNavbarData.publications,
         url: "/publications.html",
       },
       {
         active: navbarLinks.research ? true : false,
-        title: lang === "fa" ? faNavbarData.Research : enNavbarData.Research,
+        title: enNavbarData.Research,
         url: "/research.html",
       },
       {
         active: navbarLinks.jobs ? true : false,
-        title: lang === "fa" ? faNavbarData.Jobs : enNavbarData.Jobs,
+        title: enNavbarData.Jobs,
         url: "/jobs.html",
       },
       {
         active: navbarLinks.contact ? true : false,
-        title: lang === "fa" ? faNavbarData.Contact : enNavbarData.Contact,
+        title: enNavbarData.Contact,
         url: "/contact.html",
       },
     ],

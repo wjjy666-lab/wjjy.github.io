@@ -7,22 +7,13 @@ const navbarLinks = {
 };
 
 const globalData = {
-  image: "../files/profile.jpg",
-  resume: "../files/resume.pdf",
-  enAddress: "Your address ",
-  faAddress: " آدرس شما ",
-  phone: "09120000000",
-  email: "example@email.com",
-  twitterTitle: "",
-  twitter: "",
-  whatsappTitle: "WhatsApp number",
-  whatsapp: "https://api.whatsapp.com/send?phone=your_number",
+  image: "../files/image.jpg",
+  resume: "../files/CV.pdf",
+  email: "wjjy@sjtu.edu.cn",
   googleScholarTitle: "Google Scholar title",
   googleScholar: "@googleScholar",
   linkedinTitle: "Linkedin Username",
-  linkedin: "https://www.linkedin.com/in/your_username/",
+  linkedin: "https://www.linkedin.com/in/jiangjiyuan-wang-941603372/",
   githubTitle: "Github Username",
-  github: "https://github.com/your_username",
-  orcidTitle: "Orcid Username",
-  orcid: "https://orcid.com/your_username",
+  github: "https://github.com/wjjy666-lab",
 };
